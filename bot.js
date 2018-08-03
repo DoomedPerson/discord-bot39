@@ -12,6 +12,7 @@ client.on('message', message => {
   	}
     if (messagecontent.slice(11) === "!pc-player+") {
         if (messagecontent.slice(3) === "!pc") {
+            message.reply("i get here")
             let platform = "PC"
             let Role = message.guild.roles.find('name', platform)
             
