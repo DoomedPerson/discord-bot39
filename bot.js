@@ -21,6 +21,7 @@ client.on('message', message => {
             
             if (Role) {
                 if (!message.author.roles.has(Role.id)) {
+                    message.reply('there');
                     message.author.addRole(Role.id);
                 }
             }
