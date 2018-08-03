@@ -14,8 +14,7 @@ client.on('message', message => {
             
 
             
-            string platform = "PC";
-            let Role = message.guild.roles.find('name', platform);
+            let Role = message.guild.roles.find('name', "PC");
             
 
             
