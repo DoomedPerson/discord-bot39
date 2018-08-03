@@ -11,9 +11,6 @@ client.on('message', message => {
     	message.reply("Type '!PC-Player+' if your a PC player, '!XBox-Player+' if your a XBox player, '!PS4-Player+' if your a PS4 player, and '!Switch-Player+' if your a switch player. To remove your role type '!*platform*_Player-'");
   	}
     if (messagecontent === "!pc-player+") {
-        let newstring = substr(messagecontent, 0, 3);
-        message.reply("hi");
-        if (newstring === "!pc") {
             message.reply("i get here");
 
             
@@ -27,7 +24,6 @@ client.on('message', message => {
                     message.author.addRole(Role.id);
                 }
             }
-        }
     }
 });
 
