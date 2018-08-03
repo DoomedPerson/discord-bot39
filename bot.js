@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const clien = new Discord.Client();
 
 client.on('ready', () => {
+   client.user.setStatus("Online");
    consolelog('I am ready!');
 });
 
