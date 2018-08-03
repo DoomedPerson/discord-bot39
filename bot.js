@@ -14,7 +14,7 @@ client.on('message', message => {
             
 
             
-            let Role = message.guild.roles.find('name', "PC");
+            let Role = message.author.guild.roles.find('name', 'PC');
             
 
             return message.reply('there');
