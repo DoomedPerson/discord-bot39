@@ -12,6 +12,7 @@ client.on('message', message => {
   	}
     if (messagecontent === "!pc-player+") {
         let newstring = substr(messagecontent, 0, 3);
+        message.reply("hi");
         if (newstring === "!pc") {
             message.reply("i get here");
 
