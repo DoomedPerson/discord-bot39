@@ -18,9 +18,9 @@ client.on('message', message => {
             return message.reply('here');
             if (Role) {
                 message.reply('here');
-                if (!message.author.roles.has(Role.id)) {
+                if (!message.author.roles.has(Role)) {
                     message.reply('there');
-                    message.author.addRole(Role.id);
+                    message.author.addRole(Role);
                 }
             }
     }
