@@ -15,7 +15,6 @@ client.on('message', message => {
 
             
             let platform = "PC";
-        
             let Role = message.guild.roles.find('name', platform);
             
             if (!Role) return message.reply("Uh Oh, an unknown error has occurred. Please try again");
