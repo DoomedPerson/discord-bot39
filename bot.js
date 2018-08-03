@@ -12,8 +12,7 @@ client.on('message', message => {
   	}
     if (messagecontent === "!pc-player+") {
         message.reply("i get here")
-        let newstring = substr(messagecontent, 0, 3)
-        if (newstring === "!pc") {
+
             message.reply("i get here")
             
             let platform = "PC"
@@ -26,7 +25,6 @@ client.on('message', message => {
                     message.author.addRole(Role.id);
                 }
             }
-        }
     }
 });
 
