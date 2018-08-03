@@ -12,7 +12,8 @@ client.on('message', message => {
   	}
     if (messagecontent === "!pc-player+") {
         message.reply("i get here")
-        if (messagecontent.slice(3) === "!pc") {
+        let newstring = substr(messagecontent, 0, 5)
+        if (newstring === "!pc") {
             message.reply("i get here")
             
             let platform = "PC"
