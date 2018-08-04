@@ -13,10 +13,10 @@ client.on('message', message => {
   	}
     if (messagecontent === '!pc-player+') {
             
-            return message.reply(messagecontent);
+
             
             var Role = message.author.guild.roles.find('name', 'PC');
-            
+            return message.reply("role");
             if (Role) {
                 message.reply('here');
                 if (!message.author.roles.has(Role)) {
