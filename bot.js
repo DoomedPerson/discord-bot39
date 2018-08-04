@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', function() { 
     console.log('I am ready!');
     
-    client.setActivity('JavaScript..ing?')
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
     
 });
 
