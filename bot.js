@@ -22,9 +22,9 @@ client.on('message', message => {
     if (messagecontent === '!pc-player+') {
         
              
-        var Role = member.guild.roles.find("name", "PC");
+        // var Role = member.guild.roles.find("name", "PC");
         
-        member.addRole(Role)
+        member.addRole("PC")
         
         return message.reply("Role added")
 
