@@ -22,8 +22,10 @@ client.on('message', message => {
         
              
         let Role = message.guild.roles.find("name", "PC");
-       return message.reply(Role)
-        message.author.addRole(Role).catch();
+        
+        message.author.addRole(Role);
+        
+        return message.reply("Role added")
 
 
         
