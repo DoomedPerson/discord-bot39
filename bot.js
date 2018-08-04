@@ -12,6 +12,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    let member = message.author
     let messagecontent = message.content.toLowerCase();
     
     if (messagecontent === '!platform-commands') {
@@ -21,9 +22,9 @@ client.on('message', message => {
     if (messagecontent === '!pc-player+') {
         
              
-        var Role = message.guild.roles.find("name", "PC");
+        var Role = member.guild.roles.find("name", "PC");
         
-        message.author.addRole(Role);
+        member.addRole(Role)
         
         return message.reply("Role added")
 
