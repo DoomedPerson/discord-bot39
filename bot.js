@@ -10,12 +10,13 @@ client.on('message', message => {
     
     if (messagecontent === '!platform-commands') {
     	message.reply("Type '!PC-Player+' if your a PC player, '!XBox-Player+' if your a XBox player, '!PS4-Player+' if your a PS4 player, and '!Switch-Player+' if your a switch player. To remove your role type '!*platform*_Player-'");
-  	}
+    }
+    
     if (messagecontent === '!pc-player+') {
             
  return message.reply("role");
             
-            var Role = message.author.guild.roles.find('name', 'PC');
+            let Role = message.guild.roles.find("name", "PC");
            
             if (Role) {
                 message.reply('here');
