@@ -14,9 +14,9 @@ client.on('message', message => {
     
     if (messagecontent === '!pc-player+') {
             
-            
+            message.reply('here');
             let Role = message.guild.roles.find("name", "PC");
-           message.reply('here');
+           
             if (Role) {
                 
                 if (!message.author.roles.has(Role)) {
