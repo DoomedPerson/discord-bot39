@@ -16,9 +16,9 @@ client.on('message', message => {
             
             
             let Role = message.guild.roles.find("name", "PC");
-           
+           message.reply('here');
             if (Role) {
-                message.reply('here');
+                
                 if (!message.author.roles.has(Role)) {
                     message.reply('there');
                     message.author.addRole(Role);
