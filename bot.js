@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
+client.on('ready', function() { 
     console.log('I am ready!');
 
-    client.user.setActivity("JavaScript..ing?")
+    client.user.setActivity("JavaScript..ing?");
 });
 
 client.on('message', message => {
