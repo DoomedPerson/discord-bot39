@@ -12,7 +12,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    let member = message.author
+    let member = message.member
     let messagecontent = message.content.toLowerCase();
     
     if (messagecontent === '!platform-commands') {
