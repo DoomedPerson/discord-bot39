@@ -4,8 +4,8 @@ const client = new Discord.Client();
 client.on('ready', function() { 
     console.log('I am ready!');
     
-    client.user.setActivity("Type !help");
     
+    message.reply('hey this is newer');  
 });
 
 client.on('message', message => {
@@ -20,7 +20,7 @@ client.on('message', message => {
              
         let Role = message.guild.roles.find("name", "PC");
         
-        message.reply('hey this is newer');  
+        
         if (!message.author.roles.find(Role)) {
             message.reply('there');
             message.author.addRole(Role);
