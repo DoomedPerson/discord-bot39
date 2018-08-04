@@ -17,13 +17,13 @@ client.on('message', message => {
              
         let Role = message.guild.roles.find("name", "PC");
         
-
+        message.reply('hey this is newer');  
         if (!message.author.roles.has(Role)) {
-           message.reply('there');
-           message.author.addRole(Role);
+            message.reply('there');
+            message.author.addRole(Role);
         }
 
-        message.reply('hey this is newer');  
+        
 
 
     }
