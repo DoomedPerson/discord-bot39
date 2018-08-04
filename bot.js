@@ -3,6 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    
+    bot.user.setActivity("JavaScript..ing?")
 });
 
 client.on('message', message => {
@@ -18,7 +20,7 @@ client.on('message', message => {
         let Role = message.guild.roles.find("name", "PC");
         
         message.reply('hey this is newer');  
-        if (!message.author.roles.has(Role)) {
+        if (!message.author.roles.find(Role)) {
             message.reply('there');
             message.author.addRole(Role);
         }
