@@ -3,8 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    return message.reply('thereeeee');
-    bot.user.setActivity("JavaScript..ing?")
+
+    client.user.setActivity("JavaScript..ing?")
 });
 
 client.on('message', message => {
