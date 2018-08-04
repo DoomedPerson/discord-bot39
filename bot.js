@@ -1,11 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', function() { 
-    console.log('I am ready!');
-    
-    
-    message.reply('hey this is newer');  
+client.on('ready', () => {
+    client.user.setStatus('idle') // Can be 'available', 'idle', 'dnd', or 'invisible'
+    client.user.setPresence({
+        game: {
+            name: 'Type !help',
+            type: 0
+        }
+    });
 });
 
 client.on('message', message => {
