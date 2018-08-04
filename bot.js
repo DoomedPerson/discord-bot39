@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', function() { 
     console.log('I am ready!');
     
-    client.user.setPresence('JavaScript..ing?')
+    bot.setActivity('JavaScript..ing?')
     
 });
 
