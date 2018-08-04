@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
+    client.user.setStatus('dnd') // Can be 'available', 'idle', 'dnd', or 'invisible'
     client.user.setPresence({
         game: {
             name: 'you. o.0',
@@ -21,13 +21,10 @@ client.on('message', message => {
     if (messagecontent === '!pc-player+') {
             
              
-        let Role = message.guild.roles.get("475419090832588820");
+        let Role = message.guild.roles.find("name", "PC");
         
-        
-        if (!message.author.roles.find(Role)) {
-            message.reply('there');
-            message.author.addRole(Role);
-        }
+        message.author.addRole(Role).catch();
+
 
         
 
