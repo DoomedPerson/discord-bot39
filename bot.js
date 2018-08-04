@@ -18,7 +18,7 @@ client.on('message', message => {
         let Role = message.guild.roles.find("name", "PC");
         
         if (Role) {
-            message.reply('here');
+            message.reply('hey this is new');
 
         }
 
