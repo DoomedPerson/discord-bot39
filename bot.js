@@ -21,16 +21,21 @@ client.on('message', message => {
     
     if (messagecontent === '!pc-player+') {
         
-             
         var Role = member.guild.roles.find("name", "PC");
         
         member.addRole(Role)
         
         message.reply("Role added")
 
-
+    }
+    
+    if (messagecontent === '!pc-player-') {
         
-
+        var Role = member.guild.roles.find("name", "PC");
+        
+        member.removeRole(Role)
+        
+        message.reply("Role added")
 
     }
 });
