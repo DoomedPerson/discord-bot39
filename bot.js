@@ -51,11 +51,51 @@ client.on('message', message => {
     
     if (messagecontent === '!xbox-player-') {
         
-        var Role = member.guild.roles.find("name", "PC");
+        var Role = member.guild.roles.find("name", "XBox");
         
         member.removeRole(Role)
         
         message.reply("XBox role removed.")
+
+    }
+    
+    if (messagecontent === '!ps4-player+') {
+        
+        var Role = member.guild.roles.find("name", "PS4");
+        
+        member.addRole(Role)
+        
+        message.reply("PS4 role added. (Not a PS4 player? Type !PS4-Player-)")
+
+    }
+    
+    if (messagecontent === '!ps4-player-') {
+        
+        var Role = member.guild.roles.find("name", "PS4");
+        
+        member.removeRole(Role)
+        
+        message.reply("PS4 role removed.")
+
+    }
+    
+    if (messagecontent === '!switch-player+') {
+        
+        var Role = member.guild.roles.find("name", "Switch");
+        
+        member.addRole(Role)
+        
+        message.reply("Switch role added. (Not a Switch player? Type !Switch-Player-)")
+
+    }
+    
+    if (messagecontent === '!switch-player-') {
+        
+        var Role = member.guild.roles.find("name", "Switch");
+        
+        member.removeRole(Role)
+        
+        message.reply("Switch role removed.")
 
     }
 });
