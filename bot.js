@@ -38,6 +38,26 @@ client.on('message', message => {
         message.reply("PC role removed.")
 
     }
+    
+    if (messagecontent === '!xbox-player+') {
+        
+        var Role = member.guild.roles.find("name", "XBox");
+        
+        member.addRole(Role)
+        
+        message.reply("XBox role added. (Not a XBox player? Type !XBox-Player-)")
+
+    }
+    
+    if (messagecontent === '!xbox-player-') {
+        
+        var Role = member.guild.roles.find("name", "PC");
+        
+        member.removeRole(Role)
+        
+        message.reply("XBox role removed.")
+
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
