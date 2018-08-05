@@ -25,7 +25,7 @@ client.on('message', message => {
         
         member.addRole(Role)
         
-        message.reply("Role added")
+        message.reply("PC role added. (Not a PC player? Type !PC-Player-)")
 
     }
     
@@ -35,7 +35,7 @@ client.on('message', message => {
         
         member.removeRole(Role)
         
-        message.reply("Role added")
+        message.reply("PC role removed.")
 
     }
 });
