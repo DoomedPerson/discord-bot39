@@ -99,9 +99,9 @@ client.on('message', message => {
 
     }
     
-    if (messagecontent === '!alertmods') {
+    if (messagecontent === '!alertadmins') {
              
-        message.channel.send('<@' + message.author.id + '> Has alerted the mods.')
+        message.channel.send("<@" + message.author.id + "> Has alerted the mods.")
 
     }
 });
