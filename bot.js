@@ -101,7 +101,7 @@ client.on('message', message => {
     
     if (messagecontent === '!alertadmins') {
              
-        message.channel.send("<@" + message.Author.Id + "> Has alerted the mods.")
+        message.reply("Has alerted the mods.")
 
     }
 });
