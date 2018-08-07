@@ -102,7 +102,7 @@ client.on('message', message => {
     if (messagecontent === '!alertadmins') {
         
         let adminRoleObject = message.server.roles.get('name', 'Admin');
-        message.channel.send("<@" + message.author.id + "> has alerted the ${adminRoleObject}.")
+        message.channel.send("<@" + message.author.id + "> has alerted the \@Admin .")
 
     }
 });
