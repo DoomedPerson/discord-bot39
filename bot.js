@@ -98,6 +98,12 @@ client.on('message', message => {
         message.reply("Switch role removed.")
 
     }
+    
+    if (messagecontent === '!alertmods') {
+             
+        message.channel.send('<@' + message.author.id + '> Has alerted the mods.')
+
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
