@@ -101,7 +101,7 @@ client.on('message', message => {
     
     if (messagecontent === '!alertadmins') {
              
-        message.reply("Has alerted the mods.")
+        message.reply("Has alerted the @admin .")
 
     }
 });
