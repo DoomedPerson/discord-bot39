@@ -102,7 +102,7 @@ client.on('message', message => {
     if (messagecontent === '!alertadmins') {
         
         let adminRoleObject = member.guild.roles.find('name', 'Admin');
-        message.channel.send("<@" + message.author.id + "> has alerted the <@476187069006217236> .")
+        message.channel.send("<@" + message.author.id + "> has alerted the admins. Unimportant stuff: <@476187069006217236> .")
 
     }
 });
