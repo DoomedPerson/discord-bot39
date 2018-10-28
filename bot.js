@@ -89,6 +89,15 @@ client.on('message', message => {
 
     }
     
+    if (messagecontent.search("heck") === 1) {
+        
+        message.reply("no cuss in christian minecraft server")
+        
+        message.delete()
+
+    }
+    
+    
     if (messagecontent === '!switch-player-') {
         
         var Role = member.guild.roles.find("name", "Switch");
