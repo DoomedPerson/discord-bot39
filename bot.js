@@ -92,8 +92,6 @@ client.on('message', message => {
     if (messagecontent.includes("heck")) {
         
         message.reply("no cuss in christian minecraft server")
-        
-        message.delete()
 
     }
     
