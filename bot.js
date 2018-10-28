@@ -89,7 +89,7 @@ client.on('message', message => {
 
     }
     
-    if (messagecontent.search("heck") === 1) {
+    if (str.includes("heck") === true) {
         
         message.reply("no cuss in christian minecraft server")
         
